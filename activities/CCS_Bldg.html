@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CCS BUILDING</title>
+    <style>
+      body{
+    background: #b0e0e6;
+    margin: 0 50px 0 50px;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    padding: 30px 30px;
+}
+.post-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+span{
+    width: 70px;
+    height: 100vh;
+    background: #635f5f;
+}
+.main{
+    width: 1600px;
+    height: 100%;
+    background:#3d3c3c;
+    position: relative;
+}
+.door-1{
+    position: absolute;
+    width: 100px;
+    left: 100px;
+    top: 80px;
+    height: 120px;
+    background: #635f5f;
+}
+.door-knob1{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 50px;
+    border-radius: 50%;
+    background: #333;
+}
+.door-2{
+    position: absolute;
+    width: 100px;
+    left: 30%;
+    top: 80px;
+    height: 120px;
+    background: #635f5f;
+}
+.door-knob2{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 50px;
+    border-radius: 50%;
+    background: #333;
+}
+.door-3{
+    position: absolute;
+    width: 100px;
+    left: 54%;
+    top: 80px;
+    height: 120px;
+    background: #635f5f;
+}
+.door-knob3{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 50px;
+    border-radius: 50%;
+    background: #333;
+}
+.door-4{
+    position: absolute;
+    width: 100px;
+    left: 100px;
+    top: 43%;
+    height: 120px;
+    background: #635f5f;
+}
+.door-knob4{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 50px;
+    border-radius: 50%;
+    background: #333;
+}
+.door-5{
+    position: absolute;
+    width: 100px;
+    left: 30%;
+    top: 43%;
+    height: 120px;
+    background: #635f5f;
+}
+.door-knob5{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 50px;
+    border-radius: 50%;
+    background: #333;
+}
+.door-6{
+    position: absolute;
+    width: 100px;
+    left: 54%;
+    top: 43%;
+    height: 120px;
+    background: #635f5f;
+}
+.door-knob6{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 50px;
+    border-radius: 50%;
+    background: #333;
+}
+.door-7{
+    position: absolute;
+    width: 100px;
+    bottom: 50px;
+    left: 100px;
+    height: 120px;
+    background: #635f5f;
+}
+.door-knob7{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 50px;
+    border-radius: 50%;
+    background: #333;
+}
+.door-8{
+    position: absolute;
+    width: 100px;
+    bottom: 50px;
+    left: 30%;
+    height: 120px;
+    background: #635f5f;
+}
+.door-knob8{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 50px;
+    border-radius: 50%;
+    background: #333;
+}
+.door-9{
+    position: absolute;
+    width: 100px;
+    right: 5%;
+    top: 80px;
+    height: 120px;
+    background: #635f5f;
+}
+.door-knob9{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 50px;
+    border-radius: 50%;
+    background: #333;
+}
+.door-10{
+    position: absolute;
+    width: 100px;
+    right: 5%;
+    top: 43%;
+    height: 120px;
+    background: #635f5f;
+}
+.door-knob10{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 50px;
+    border-radius: 50%;
+    background: #333;
+}
+.door-11{
+    position: absolute;
+    width: 100px;
+    right: 5%;
+    top: 73%;
+    height: 120px;
+    background: #635f5f;
+}
+.door-knob11{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 50px;
+    border-radius: 50%;
+    background: #333;
+}
+.right-side{
+    position: absolute;
+    width: 220px;
+    height: 625px;
+    background: #ae7d67;
+    right: -220px;
+    box-shadow: 2px 3px 8px 1px #444;
+    
+}
+.main-entrance{
+    background: #ffffe0;
+    width: 310px;
+    height: 104%;
+    right: 15%;
+    position: absolute;
+    bottom:0;
+    box-shadow: 2px 3px 8px 1px #444;
+}
+.content{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    padding: 50px 40px;
+    font-size: 10px;
+}
+.text h1{
+    text-align: center;
+    font-family: arial;
+    text-transform: uppercase;
+}
+.way-left{
+    position: absolute;
+    width: 57%;
+    height: 70px;
+    bottom: 0;
+    background: #ffffe0;
+    box-shadow: 2px 3px 8px 1px #444;
+}
+.way-right{
+    position: absolute;
+    width: 20%;
+    height: 70px;
+    bottom: 0;
+    right: 0;
+    background:#ffffe0;
+    box-shadow: 2px 3px 8px 1px #444;
+}
+.line1{
+    position: absolute;
+    width: 120%;
+    height: 70px;
+    top: 0;
+    left: -40px;
+    background: #ffffe0;
+    box-shadow: 2px 3px 8px 1px #444;
+}
+.line2{
+    position: absolute;
+    width: 1640px;
+    height: 70px;
+    left: -40px;
+    top: 30%;
+    background: #ffffe0;
+    box-shadow: 2px 3px 8px 1px #444;
+}
+.line3{
+    position: absolute;
+    width: 1640px;
+    height: 70px;
+    top: 60%;
+    left: -40px;
+    box-shadow: 2px 3px 8px 1px #444;
+    background: #ffffe0;
+}
+.window{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 50px 40px;
+}
+.grids {
+    background-color: #444;
+    border: 1px solid gray;
+    font-size: 24px;
+    padding: 20px;
+}
+.entrance{
+    position: absolute;
+    width: 200px;
+    height: 180px;
+    background: #444;
+    left: 50px;
+    bottom:0;
+}
+.ladder {
+    position: absolute;
+    left: 50px;
+    top: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .step {
+    width: 100px;
+    height: 20px;
+    margin-bottom: 10px;
+    background-color: #635f5f;
+    box-shadow: 2px 3px 8px 1px #3d3c3c;
+  }
+  
+.left{
+    position: absolute;
+    width: 50px;
+    height: 180px;
+    background: #ae7d67;
+    bottom: 0;
+}
+.right{
+    position: absolute;
+    width: 60px;
+    height: 180px;
+    background: #ae7d67;
+    bottom: 0;
+    right: 0;
+}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="main">
+        <div class="door-1">
+          <div class="door-knob1"></div>
+        </div>
+        <div class="door-2">
+          <div class="door-knob2"></div>
+        </div>
+        <div class="door-3">
+          <div class="door-knob3"></div>
+        </div>
+        <div class="door-4">
+          <div class="door-knob4"></div>
+        </div>
+        <div class="door-5">
+          <div class="door-knob5"></div>
+        </div>
+        <div class="door-6">
+          <div class="door-knob6"></div>
+        </div>
+        <div class="door-7">
+          <div class="door-knob7"></div>
+        </div>
+        <div class="door-8">
+          <div class="door-knob8"></div>
+        </div>
+        <div class="door-9">
+          <div class="door-knob9"></div>
+        </div>
+        <div class="door-10">
+          <div class="door-knob10"></div>
+        </div>
+        <div class="door-11">
+          <div class="door-knob11"></div>
+        </div>
+        <div class="right-side"></div>
+        <div class="line">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <div class="way-left"></div>
+        <div class="way-right"></div>
+        <div class="post-container">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span style="display:none;"></span>
+            <span></span>
+            <span></span>
+           
+        </div>
+        <div class="main-entrance">
+            <div class="window">
+                <div class="grids"></div>
+                <div class="grids"></div>
+                <div class="grids"></div>
+                <div class="grids"></div>
+                <div class="grids"></div>
+                <div class="grids"></div>
+                <div class="grids"></div>
+                <div class="grids"></div>
+                <div class="grids"></div>
+            </div>
+            <div class="content">
+                <div class="dmmmsu">DMMMSU LOGO</div>
+                <div class="text">
+                    <h1>College <br> of <br> Computer Science</h1>
+                </div>
+                <div class="ccs">CCS LOGO</div>
+            </div>
+            <div class="entrance">
+              <div class="ladder">
+                <div class="step"></div>
+                <div class="step"></div>
+                <div class="step"></div>
+                <div class="step"></div>
+              </div>
+              
+            </div>
+            <div class="left"></div>
+            <div class="right"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
